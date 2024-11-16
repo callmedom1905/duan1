@@ -35,14 +35,36 @@
 
 }
 /* ô bên phải sản phẩm */
-.payment__item-action-quantity .minus, .payment__item-action-quantity .plus{
-    border: none;
-    cursor: pointer;
-    background: none;
+.payment__item-action-quantity{
+    display: flex;
 }
+.payment__item-action-quantity .minus, 
+.payment__item-action-quantity .plus{
+    cursor: pointer;
+    outline: none;
+    background: none;
+    border: 1px solid #f6f6f6;
+    width: 20px;
+    height: 20px;
+}
+
+.payment__item-action-quantity .minus:hover, 
+.payment__item-action-quantity .plus:hover{
+    background:  #f6f6f6;
+}
+
+#quantity{
+    width: 40px;
+    text-align: center;
+    border: 1px solid #f6f6f6;
+    pointer-events: none;
+    user-select: none;
+}
+
 .payment__item-action i{
     cursor: pointer;
 }
+
 /* thông tin thanh toán */
 .payment__infomation p {
     font-size: 20px;

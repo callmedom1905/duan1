@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../css/payment.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-
 </head>
 
 <body>
@@ -23,68 +22,25 @@
                 </div>
                 <div class="col l-6 payment__product">
                     <div class="payment__product-item row">
-                        <div class="col l-7 payment__product-item-left">
+                        <div class="col l-6 payment__product-item-left">
                             <img src="../image/removebg_logo_tramNhoXinh.png" alt="">
                             <p>Tên sản phẩm</p>
                         </div>
-                        <div class="col l-5" style="display: flex; align-items: center;">
-                            <div class="row">
-                                <span class="col l-4 payment__item-action-quantity">
-                                    <button class="minus"><i class="fa-solid fa-minus"></i></button>
-                                    <span>1</span>
-                                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                        <div class="col l-6 " style="display: flex; align-items: center; justify-content: space-around;">
+                                <span class="payment__item-action-quantity">
+                                    <button onclick="minus()" class="minus"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="text" id="quantity"  value="1">
+                                    <button onclick="plus()" class="plus"><i class="fa-solid fa-plus"></i></button>
                                 </span>
-                                <span class="col l-6 payment__item-price">
+                                <span class="payment__item-price">
                                     <p>100,000 đ</p>
                                 </span>
-                                <span class="col l-2 payment__item-action">
+                                <span class="payment__item-action">
                                     <i class="fa-regular fa-circle-xmark"></i>
                                 </span>
-                            </div>
                         </div>
                     </div>
-                    <div class="payment__product-item row">
-                        <div class="col l-7 payment__product-item-left">
-                            <img src="../image/removebg_logo_tramNhoXinh.png" alt="">
-                            <p>Tên sản phẩm</p>
-                        </div>
-                        <div class="col l-5" style="display: flex; align-items: center;">
-                            <div class="row">
-                                <span class="col l-4 payment__item-action-quantity">
-                                    <button class="minus"><i class="fa-solid fa-minus"></i></button>
-                                    <span>1</span>
-                                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                </span>
-                                <span class="col l-6 payment__item-price">
-                                    <p>100,000 đ</p>
-                                </span>
-                                <span class="col l-2 payment__item-action">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="payment__product-item row">
-                        <div class="col l-7 payment__product-item-left">
-                            <img src="../image/removebg_logo_tramNhoXinh.png" alt="">
-                            <p>Tên sản phẩm</p>
-                        </div>
-                        <div class="col l-5" style="display: flex; align-items: center;">
-                            <div class="row">
-                                <span class="col l-4 payment__item-action-quantity">
-                                    <button class="minus"><i class="fa-solid fa-minus"></i></button>
-                                    <span>1</span>
-                                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                </span>
-                                <span class="col l-6 payment__item-price">
-                                    <p>100,000 đ</p>
-                                </span>
-                                <span class="col l-2 payment__item-action">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="col l-6 payment__infomation">
                     <div class="payment__infomation">
@@ -125,5 +81,6 @@
 
     <!-- footer -->
 </body>
+<script src="../js/payment.js"></script>
 
 </html>

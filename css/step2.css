@@ -89,7 +89,7 @@
 
 .paymentStep2__pay-btn{
     display: flex;
-    justify-items: space-between;
+    justify-content: space-around;
 }
 
 .action-btn-pay{
@@ -111,7 +111,8 @@
 }
 /* button next and prev */
 .paymentStep2_btn {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
     margin: 20px 0;
 }
   

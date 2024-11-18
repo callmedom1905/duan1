@@ -38,20 +38,6 @@
 .payment__item-action-quantity{
     display: flex;
 }
-.payment__item-action-quantity .minus, 
-.payment__item-action-quantity .plus{
-    cursor: pointer;
-    outline: none;
-    background: none;
-    border: 1px solid #f6f6f6;
-    width: 20px;
-    height: 20px;
-}
-
-.payment__item-action-quantity .minus:hover, 
-.payment__item-action-quantity .plus:hover{
-    background:  #f6f6f6;
-}
 
 #quantity{
     width: 40px;

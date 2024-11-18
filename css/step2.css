@@ -32,7 +32,7 @@
 }
 /* thông tin đơn hàng */
 .paymentStep2__order{
-    padding: 32px 0;
+    padding: 32px 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
 }

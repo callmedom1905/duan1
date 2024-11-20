@@ -44,7 +44,7 @@
 }
 
 .address .address__input #checkbox:checked {
-    background-color: #333;
+    background-color: #8d6e6e;
     border-color: #ccc;
 }
 

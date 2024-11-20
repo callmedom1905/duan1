@@ -24,10 +24,11 @@
 
 .address .address-col{
     padding: 25px;
+    line-height: 30px;
 }
 /* check box */
 .address .address__input{
-    padding: 10px 0 50px 20px;
+    padding: 0 0 50px 20px;
 }
 
 .address .address__input #checkbox{
@@ -79,19 +80,26 @@
     background-color: #ccc;
     cursor: pointer;
     border:none;
+    text-decoration: none;
+    color: black;
 }
 
 .add__address-btn:hover{
     background-color: #8d6e6e;
+    color: #fff;
 }
 
 .add__address-btn:active{
     transform: scale(0.95);
 }   
 
+.add__address-item{
+    padding-top: 10px;
+}
+
 .add__address-item p{
     font-size: 14px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 /* button next and prev */
@@ -120,3 +128,79 @@
   .paymentStep1__btn-prev:active, .paymentStep1__btn-next:active {
     transform: scale(0.95);
   }
+
+
+  /* dialog bảng thêm địa chỉ */
+.dialog{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity linear 0.2s;
+}
+
+.dialog:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-body{
+    width: 800px;
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.btn-close-dialog{
+    text-decoration: none;
+    color: #000;
+}
+
+.title-add-address{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+form{
+    width: 100%;
+    max-width: 800px; /* Giới hạn chiều rộng tối đa cho form */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Khoảng cách giữa các phần tử */
+}
+label{
+    font-size: 18px;
+}
+
+input[type="text"]{
+    padding: 15px;
+    border: 1px solid #8d6e6e;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    padding: 10px;
+    background-color: #808080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+    background-color: #8d6e6e;   
+}
